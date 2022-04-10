@@ -7,11 +7,10 @@ import lombok.extern.slf4j.Slf4j;
  * Created by park on 2022/04/10.
  */
 @Slf4j
-public class MessageDecorator implements Component {
+public class MessageDecorator extends Decorator {
 
-  private Component component;
   public MessageDecorator(Component component) {
-    this.component = component;
+    super(component);
   }
 
   @Override

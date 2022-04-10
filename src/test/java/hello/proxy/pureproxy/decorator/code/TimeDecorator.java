@@ -6,11 +6,11 @@ import lombok.extern.slf4j.Slf4j;
  * Created by park on 2022/04/10.
  */
 @Slf4j
-public class TimeDecorator implements Component {
+public class TimeDecorator extends Decorator {
 
-  private Component component;
+
   public TimeDecorator(Component component) {
-    this.component = component;
+    super(component);
   }
 
   @Override
